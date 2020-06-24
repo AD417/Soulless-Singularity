@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>The Soulless Singularity</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>W.I.P. Game:</h1>
+
+    <p>
+      Woop de doo, you are a bit too early to witness the game I am making. Come
+      back... next week? There WILL be content here, so be sure to come back!
+    </p>
+    <p>
+      This webpage was last edited on the 24th of June.
+    </p>
+    <!-- TODO: make this look good -->
+
+    <h2 id="Singularity" style="width: auto; text-align:center;">
+      The Sphere is 10 meters wide.
+    </h2>
+    <h4 id="energy" style="width: auto; text-align:center;">
+      Meanwhile, you have 0 energy.
+    </h4>
+    <button type="button" style = "align: center; font-size: 16px" onclick="increment(1)">
+      Wack the sphere with a hammer <br> (make the singularity smaller)
+    </button>
+    <table>
+      <tr
+        style="font-size: 15px; display: table-row; visibility: visible;"
+        id="firstRow"
+      >
+        <td id="lengthComp" width="32%">Lengthwise Compressor x1</td>
+        <td>
+          <div id="compAmount1">0 (0) </div>
+        </td>
+        <td align="right" width="10%">
+          <button
+            id="length"
+            style="color:black; height: 25px; font-size: 10px; width: 135px"
+            align="right"
+            onclick="buy(1)"
+          >
+            Cost: 1
+          </button>
+        </td>
+        <td align="right" width="10%">
+          <button
+            id="lengthMax"
+            style="color:black; width:210px; height: 25px; font-size: 10px"
+            align="right"
+          >
+            MAX: 0
+          </button>
+        </td>
+      </tr>
+      <tr
+        style="font-size: 15px; display: table-row; visibility: visible;"
+        id="secondRow"
+      >
+        <td id="widthComp" width="32%">Widthwise Compressor x1</td>
+        <td>
+          <div id="compAmount2">0 (0) </div>
+        </td>
+        <td align="right" width="10%">
+          <button
+            id="width"
+            style="color:black; height: 25px; font-size: 10px; width: 135px"
+            align="right"
+            onclick="buy(2)"
+          >
+            Cost: 1
+          </button>
+        </td>
+        <td align="right" width="10%">
+          <button
+            id="widthMax"
+            style="color:black; width:210px; height: 25px; font-size: 10px"
+            align="right"
+          >
+            MAX: 0
+          </button>
+        </td>
+      </tr>
+      <tr
+        style="font-size: 15px; display: table-row; visibility: visible;"
+        id="thirdRow"
+      >
+        <td id="depthComp" width="32%">Depthwise Compressor x1</td>
+        <td>
+          <div id="compAmount3">0 (0) </div>
+        </td>
+        <td align="right" width="10%">
+          <button
+            id="depth"
+            style="color:black; height: 25px; font-size: 10px; width: 135px"
+            align="right"
+            onclick="buy(3)"
+          >
+            Cost: 1
+          </button>
+        </td>
+        <td align="right" width="10%">
+          <button
+            id="depthMax"
+            style="color:black; width:210px; height: 25px; font-size: 10px"
+            align="right"
+          >
+            MAX: 0
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>

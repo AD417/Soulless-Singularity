@@ -1,5 +1,3 @@
-use strict
-
 let energy = 0; //obligatory declarations
 let singularitySize = 10;
 let compressors = [0, 0, 0];
